@@ -32,7 +32,7 @@ Form.cpf.generate();
 // you can pass a custom number
 // Form.cpf.generate(111222333);
 
-//validate cnpj
+//validate cpf
 Form.cpf.validate('11122233344'); // false
 Form.cpf.validate('12332112340'); // true
 ```
