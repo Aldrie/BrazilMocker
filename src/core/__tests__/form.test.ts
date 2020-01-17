@@ -1,4 +1,4 @@
-import { Form } from '../';
+import { Form } from '../../';
 
 describe('Form features', () => {
 	describe('Cnpj', () => {

@@ -1,14 +1,16 @@
 {
   "name": "brazil-mocker",
-  "version": "1.0.0",
+  "version": "0.1",
   "main": "index.js",
   "license": "MIT",
+  "types": "./",
   "scripts": {
     "start": "ts-node src/index.ts",
-	 "dev": "nodemon",
-	 "test": "jest",
-	 "test:watch": "jest --watch",
-	 "test:watchAll": "jest --watchAll"
+    "dev": "nodemon",
+    "test": "jest",
+    "test:watch": "jest --watch",
+	 "test:watchAll": "jest --watchAll",
+	 "build": "tsc -p ."
   },
   "devDependencies": {
     "@types/jest": "^24.9.0",
@@ -21,6 +23,7 @@
     "jest": "^24.9.0",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",
+    "tsc": "^1.20150623.0",
     "typescript": "^3.7.4"
   }
 }
