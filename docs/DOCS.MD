@@ -10,6 +10,9 @@ const { Form } = require('brazil-mocker');
 
 ### [Cnpj](#cnpj)
 ### [Cpf](#cpf)
+### [FirstName](#firstname)
+### [LastName](#lastname)
+### [FullName](#fullname)
 
 # 
 
@@ -27,7 +30,7 @@ Form.cnpj.validate('12332112332121'); // true
 
 ## Cpf
 ```javascript
-//random cnpj
+//random cpf
 Form.cpf.generate();
 // you can pass a custom number
 // Form.cpf.generate(111222333);
@@ -36,3 +39,33 @@ Form.cpf.generate();
 Form.cpf.validate('11122233344'); // false
 Form.cpf.validate('12332112340'); // true
 ```
+
+## FirstName
+```javascript
+Form.names.firstName.generate(gender, captalize);
+```
+
+|      Name | Type    | Value             | Default |
+|:----------|:--------|------------------:|--------:|
+| gender    | string  | 'male' / 'female' | random  |
+| captalize | boolean | true / false      | true    |
+
+## LastName
+```javascript
+Form.names.lastName.generate(captalize);
+```
+
+|      Name | Type    | Value             | Default |
+|:----------|:--------|------------------:|--------:|
+| captalize | boolean | true / false      | true    |
+
+## FullName
+```javascript
+Form.names.fullName.generate(gender, captalize, abbreviation);
+```
+
+|      Name | Type    | Value                | Default |
+|:----------|:--------|---------------------:|--------:|
+| gender       | string  | 'male' / 'female' | random  |
+| captalize    | boolean | true / false      | true    |
+| abbreviation | boolean | true / false      | true    |
