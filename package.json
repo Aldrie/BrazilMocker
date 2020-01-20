@@ -1,6 +1,10 @@
 {
   "name": "brazil-mocker",
+<<<<<<< HEAD
   "version": "1.0.7",
+=======
+  "version": "1.0.5",
+>>>>>>> parent of 7f50605... docs: Adds live example in names
   "main": "lib/index.js",
   "license": "MIT",
   "types": "lib",
@@ -17,7 +21,7 @@
   },
   "pre-commit": [
 	  "lint",
-	  "test",
+	  "test"
   ],
   "devDependencies": {
     "@types/jest": "^24.9.0",

@@ -44,9 +44,6 @@ Form.cpf.validate('11122233344'); // false
 Form.cpf.validate('12332112340'); // trueF
 ```
 
-# Names
-## [------ Live Example ------](https://codesandbox.io/s/eloquent-kilby-ilwyh?fontsize=14&hidenavigation=1&theme=dark)
-
 ## FirstName
 ```javascript
 Form.names.firstName.generate(gender, captalize);
