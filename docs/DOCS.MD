@@ -8,11 +8,15 @@ import { Form } from 'brazil-mocker';
 const { Form } = require('brazil-mocker');
 ```
 
-### [Cnpj](#cnpj)
-### [Cpf](#cpf)
-### [FirstName](#firstname)
-### [LastName](#lastname)
-### [FullName](#fullname)
+[Cnpj](#cnpj)
+
+[Cpf](#cpf)
+
+[FirstName](#firstname)
+
+[LastName](#lastname)
+
+[FullName](#fullname)
 
 # 
 
@@ -37,7 +41,7 @@ Form.cpf.generate();
 
 //validate cpf
 Form.cpf.validate('11122233344'); // false
-Form.cpf.validate('12332112340'); // true
+Form.cpf.validate('12332112340'); // trueF
 ```
 
 ## FirstName
