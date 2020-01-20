@@ -19,6 +19,6 @@ export default function generateCnpj(customBaseNumber?: string): string {
 
 		return [...randomArray, firstDigit, secondDigit].join('');
 	} catch(err) {
-		throw new Error('Error generating Cnpj');
+		throw new Error('Error in generate cnpj');
 	}
 }

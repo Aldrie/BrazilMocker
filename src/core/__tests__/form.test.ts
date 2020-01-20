@@ -52,12 +52,8 @@ describe('Form features', () => {
 			expect(Form.names.lastName.generate()).toBeDefined();
 		});
 
-		it('Should to generate a female full name', () => {
-			expect(Form.names.fullName.generate('female')).toBeDefined();
-		});
-
-		it('Should to generate a random full name with no captalize 4 of length and no abbreviation', () => {
-			expect(Form.names.fullName.generate('', false, 4, false)).toBeDefined();
+		it('Should to generate a random fullname', () => {
+			expect(Form.names.fullName.generate('', true, 4, true)).toBeDefined();
 		});
 	});
 });

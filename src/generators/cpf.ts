@@ -17,6 +17,6 @@ export default function generateCpf(customNumber?: string): string {
 	
 		return [...randomArray, firstDigit, secondDigit].join('');
 	} catch(err) {
-		throw new Error('Error generating cnpj');
+		throw new Error('Error in generate cpf');
 	}
 }

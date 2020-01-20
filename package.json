@@ -1,23 +1,21 @@
 {
   "name": "brazil-mocker",
-<<<<<<< HEAD
   "version": "1.0.7",
-=======
-  "version": "1.0.5",
->>>>>>> parent of 7f50605... docs: Adds live example in names
   "main": "lib/index.js",
   "license": "MIT",
   "types": "lib",
+  
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon",
     "test": "jest",
     "test:watch": "jest --watch",
 	 "test:watchAll": "jest --watchAll",
-	 "lint": "eslint .",
-	 "lint:fix": "eslint . --fix",
-    "build": "tsc -p .",
-    "prepublish": "tsc"
+	 "build": "tsc -p .",
+	"lint": "eslint .",
+	"lint:fix": "eslint . --fix",
+	"prepublish": "tsc",
+	"precommit-msg": "echo 'Pre-commit checks 🤔' && exit 0"
   },
   "pre-commit": [
 	  "lint",
@@ -32,26 +30,13 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
     "jest": "^24.9.0",
-    "pre-commit": "^1.2.2",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",
     "tsc": "^1.20150623.0",
     "typescript": "^3.7.4"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/Aldrie/BrazilMocker"
-  },
-  "keywords": [
-    "brazil",
-    "brasil",
-    "mocker",
-    "faker",
-    "fake",
-    "test",
-    "generator",
-    "cpf",
-    "cnpj",
-    "name"
-  ]
+	"type": "git",
+	"url": "https://github.com/Aldrie/BrazilMocker"
+ }
 }
