@@ -18,6 +18,8 @@ const { Form } = require('brazil-mocker');
 
 [FullName](#fullname)
 
+[PhoneNumber](#phonenumber)
+
 # 
 
 ## Cnpj
@@ -41,8 +43,11 @@ Form.cpf.generate();
 
 //validate cpf
 Form.cpf.validate('11122233344'); // false
-Form.cpf.validate('12332112340'); // trueF
+Form.cpf.validate('12332112340'); // true
 ```
+
+# Names
+## [Live Example](https://codesandbox.io/s/eloquent-kilby-ilwyh?fontsize=14&hidenavigation=1&theme=dark)
 
 ## FirstName
 ```javascript
@@ -73,3 +78,13 @@ Form.names.fullName.generate(gender, captalize, abbreviation);
 | gender       | string  | 'male' / 'female' | random  |
 | captalize    | boolean | true / false      | true    |
 | abbreviation | boolean | true / false      | true    |
+
+## PhoneNumber
+```javascript
+Form.contact.phoneNumber.generate(withPrefix, format);
+```
+
+|      Name  | Type    | Value        | Default |
+|:-----------|:--------|-------------:|--------:|
+| withPrefix | boolean | true / false | false   |
+| format     | boolean | true / false | false   |
