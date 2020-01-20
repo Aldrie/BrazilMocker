@@ -34,4 +34,18 @@ describe('Form features', () => {
 			expect(Form.cpf.validate('11122233344')).toBe(false);
 		});
 	});
+
+	describe('Names', () => {
+		it('Should to generate a male first name', () => {
+			expect(Form.names.firstName.generate('male')).toBeDefined();
+		});
+
+		it('Should to generate a female first name', () => {
+			expect(Form.names.firstName.generate('female')).toBeDefined();
+		});
+
+		it('Should to generate a random first name', () => {
+			expect(Form.names.firstName.generate()).toBeDefined();
+		});
+	});
 });

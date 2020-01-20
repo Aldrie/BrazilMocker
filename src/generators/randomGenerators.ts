@@ -1,4 +1,4 @@
-export function generateRandomNumber(min: number, max: number, integer?: boolean): number {
+export function generateRandomNumber(min: number, max: number, integer: boolean = true): number {
 	if (integer) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
