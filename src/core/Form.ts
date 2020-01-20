@@ -8,6 +8,8 @@ import generateFirstName from '../generators/firstName';
 import generateLastName from '../generators/lastName';
 import generateFullName from '../generators/fullName';
 
+import generatePhoneNumber from '../generators/phoneNumber';
+
 const Form = {
 	cnpj: {
 		generate: generateCnpj,
@@ -29,6 +31,12 @@ const Form = {
 		fullName: {
 			generate: generateFullName,
 		}
+	},
+
+	contact: {
+		phoneNumber: {
+			generate: generatePhoneNumber,
+		},
 	}
 };
 

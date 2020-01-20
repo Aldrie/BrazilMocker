@@ -56,4 +56,10 @@ describe('Form features', () => {
 			expect(Form.names.fullName.generate('', true, 4, true)).toBeDefined();
 		});
 	});
+
+	describe('Contact', () => {
+		it('Should to generate a phone number', () => {
+			expect(Form.contact.phoneNumber.generate(true, true)).toBeDefined();
+		});
+	});
 });
