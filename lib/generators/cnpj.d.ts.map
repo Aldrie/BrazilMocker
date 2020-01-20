@@ -1,1 +1,1 @@
-{"version":3,"file":"cnpj.d.ts","sourceRoot":"","sources":["../../src/generators/cnpj.ts"],"names":[],"mappings":"AAKA,MAAM,CAAC,OAAO,UAAU,YAAY,CAAC,gBAAgB,CAAC,EAAE,MAAM,GAAG,MAAM,CActE"}
+{"version":3,"file":"cnpj.d.ts","sourceRoot":"","sources":["../../src/generators/cnpj.ts"],"names":[],"mappings":"AAKA,MAAM,CAAC,OAAO,UAAU,YAAY,CAAC,gBAAgB,CAAC,EAAE,MAAM,GAAG,MAAM,CAkBtE"}
