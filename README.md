@@ -1,4 +1,16 @@
 # BrazilMocker
-## Make your Brazilian developer life **easier**!
+## Make your Brazilian developer life **easier :)**
 
-[**Docs Here :)**](https://github.com/Aldrie/BrazilMocker/blob/master/docs/DOCS.MD)
+
+## **It's simple!**
+
+```console
+hello@world:~$ npm install brazil-mocker
+```
+or
+
+```console
+hello@world:~$ yarn add brazil-mocker
+```
+
+### [***Docs Here :)***](https://github.com/Aldrie/BrazilMocker/blob/master/docs/DOCS.MD)
