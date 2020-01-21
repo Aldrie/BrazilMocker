@@ -20,6 +20,10 @@ const { Form } = require('brazil-mocker');
 
 [PhoneNumber](#phonenumber)
 
+[Uuid](#uuid)
+
+[id](#uuid)
+
 # 
 
 ## Cnpj
@@ -66,7 +70,7 @@ Form.cpf.validate('12332112340'); // true
 | cpf       | string  |a cpf  | null   |
 
 # Names
-## [Live Example](https://codesandbox.io/s/eloquent-kilby-ilwyh?fontsize=14&hidenavigation=1&theme=dark)
+[--- Live Example ---](https://codesandbox.io/s/eloquent-kilby-ilwyh?fontsize=14&hidenavigation=1&theme=dark)
 
 ## FirstName
 ```javascript
@@ -116,3 +120,16 @@ Form.contact.phoneNumber.validate(number);
 |      Name  | Type    | Value        | Default |
 |:-----------|:--------|-------------:|--------:|
 | number     | string  |a phone number| null    |
+
+## Uuid
+```javascript
+//generate a uuid
+Form.uuid.generate();
+```
+
+## Id
+```javascript
+//generate a id
+Form.id.generate();
+//* my own random id system
+```
