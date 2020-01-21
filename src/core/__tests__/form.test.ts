@@ -71,5 +71,13 @@ describe('Form features', () => {
 		it('Should to validate a phone number as false', () => {
 			expect(Form.contact.phoneNumber.validate('123123')).toBe(false);
 		});
+
+		it('Should to generate a random uuid', () => {
+			expect(Form.uuid.generate()).toBeDefined();
+		});
+
+		it('Should to generate a random id', () => {
+			expect(Form.id.generate()).toBeDefined();
+		});
 	});
 });

@@ -11,7 +11,17 @@ import generateFullName from '../generators/fullName';
 import generatePhoneNumber from '../generators/phoneNumber';
 import validatePhoneNumber from '../validators/phoneNumber';
 
+import generateUuid from '../generators/uuid';
+import generateRandomId from '../generators/randomId';
+
 const Form = {
+	uuid: {
+		generate: generateUuid,
+	},
+	id: {
+		generate: generateRandomId,
+	},
+
 	cnpj: {
 		generate: generateCnpj,
 		validate: validateCnpj,
