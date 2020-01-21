@@ -7,7 +7,15 @@ import generateLastName from '../generators/lastName';
 import generateFullName from '../generators/fullName';
 import generatePhoneNumber from '../generators/phoneNumber';
 import validatePhoneNumber from '../validators/phoneNumber';
+import generateUuid from '../generators/uuid';
+import generateRandomId from '../generators/randomId';
 declare const Form: {
+    uuid: {
+        generate: typeof generateUuid;
+    };
+    id: {
+        generate: typeof generateRandomId;
+    };
     cnpj: {
         generate: typeof generateCnpj;
         validate: typeof validateCnpj;
