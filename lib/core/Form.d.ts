@@ -9,6 +9,8 @@ import generatePhoneNumber from '../generators/phoneNumber';
 import validatePhoneNumber from '../validators/phoneNumber';
 import generateUuid from '../generators/uuid';
 import generateRandomId from '../generators/randomId';
+import generateEmail from '../generators/email';
+import validateEmail from '../validators/email';
 declare const Form: {
     uuid: {
         generate: typeof generateUuid;
@@ -39,6 +41,10 @@ declare const Form: {
         phoneNumber: {
             generate: typeof generatePhoneNumber;
             validate: typeof validatePhoneNumber;
+        };
+        email: {
+            generate: typeof generateEmail;
+            validate: typeof validateEmail;
         };
     };
 };

@@ -1,3 +1,4 @@
 import { DDDs } from './DDD';
-export { DDDs as BrazilDDDs };
+import { emailDomains } from './emailDomais';
+export { DDDs as BrazilDDDs, emailDomains };
 //# sourceMappingURL=index.d.ts.map

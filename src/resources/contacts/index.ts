@@ -1,5 +1,7 @@
 import { DDDs } from './DDD';
+import { emailDomains } from './emailDomais';
 
 export {
-	DDDs as BrazilDDDs
+	DDDs as BrazilDDDs,
+	emailDomains
 };

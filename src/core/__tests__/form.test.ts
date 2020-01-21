@@ -79,5 +79,14 @@ describe('Form features', () => {
 		it('Should to generate a random id', () => {
 			expect(Form.id.generate()).toBeDefined();
 		});
+
+		it('Should to generate a random email', () => {
+			expect(Form.contact.email.generate()).toBeDefined();
+		});
+
+		it('Should to generate a custom name and domain email', () => {
+			expect(Form.contact.email.generate('     aldrie japa', 'saas.com')).toBeDefined();
+		});
+		
 	});
 });

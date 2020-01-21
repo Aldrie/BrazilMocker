@@ -13,6 +13,8 @@ import validatePhoneNumber from '../validators/phoneNumber';
 
 import generateUuid from '../generators/uuid';
 import generateRandomId from '../generators/randomId';
+import generateEmail from '../generators/email';
+import validateEmail from '../validators/email';
 
 const Form = {
 	uuid: {
@@ -48,6 +50,10 @@ const Form = {
 		phoneNumber: {
 			generate: generatePhoneNumber,
 			validate: validatePhoneNumber,
+		},
+		email: {
+			generate: generateEmail,
+			validate: validateEmail,
 		},
 	}
 };
