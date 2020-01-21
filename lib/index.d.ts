@@ -1,3 +1,4 @@
 import Form from './core/Form';
-export { Form, };
+import Company from './core/Company';
+export { Form, Company, };
 //# sourceMappingURL=index.d.ts.map
