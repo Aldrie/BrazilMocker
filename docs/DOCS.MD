@@ -26,6 +26,18 @@ const { Form } = require('brazil-mocker');
 
 [Id](#uuid)
 
+# Company
+
+```javascript
+// ES6
+import { Company } from 'brazil-mocker';
+
+// CommonJS 
+const { Company } = require('brazil-mocker');
+```
+
+[Company Name](#company-name)
+
 # 
 
 ## Cnpj
@@ -149,4 +161,15 @@ Form.uuid.generate();
 //generate a id
 Form.id.generate();
 //* my own random id system
+```
+
+# 
+
+## Company Name
+```javascript
+//generate a company name
+Company.name.generate();
+
+//generate a custom category company name
+Company.name.generate('tech');
 ```
