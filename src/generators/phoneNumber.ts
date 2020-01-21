@@ -7,7 +7,7 @@ export default function generatePhoneNumber(withPrefix: boolean = false, format:
 		let phoneNumber = '';
 
 		const randomPhoneNumber = generateRandomArray(decimalNumbers, 8);
-		const randomDDDIndex = generateRandomNumber(0, BrazilDDDs.length);
+		const randomDDDIndex = generateRandomNumber(0, BrazilDDDs.length -1);
 		const randomDDD = BrazilDDDs[randomDDDIndex];
 
 		if (format) {

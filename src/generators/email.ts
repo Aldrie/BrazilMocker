@@ -23,6 +23,6 @@ export default function generateEmail(customName?: string, customDomain?: string
 		+ generateRandomNumber(1, 999).toString();
 	}
 
-	return `${name}@${domain}`;
+	return `${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')}@${domain}`;
 
 }
