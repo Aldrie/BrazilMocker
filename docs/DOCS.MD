@@ -20,6 +20,8 @@ const { Form } = require('brazil-mocker');
 
 [PhoneNumber](#phonenumber)
 
+[Email](#email)
+
 [Uuid](#uuid)
 
 [Id](#uuid)
@@ -120,6 +122,21 @@ Form.contact.phoneNumber.validate(number);
 |      Name  | Type    | Value        | Default |
 |:-----------|:--------|-------------:|--------:|
 | number     | string  |a phone number| null    |
+
+
+## Email
+```javascript
+//generate random email
+Form.contact.email.generate(customName,customDomain);
+
+//validate a email
+Form.contact.email.validate(email);
+```
+### generate
+|      Name        | Type   | Value    | Default|
+|:-----------------|:-------|---------:|-------:|
+| customName       | string | a string | null   |
+| customDomain     | string | a string | null   |
 
 ## Uuid
 ```javascript
