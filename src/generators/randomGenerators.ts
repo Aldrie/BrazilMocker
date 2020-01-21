@@ -16,3 +16,7 @@ export function generateRandomArray(characters: any[], length: number): any[] {
 
 	return array;
 }
+
+export function generateRandomChoice(options: any[]): any {
+	return options[generateRandomNumber(0, options.length -1)];
+}
