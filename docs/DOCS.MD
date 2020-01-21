@@ -33,6 +33,15 @@ Form.cnpj.generate();
 Form.cnpj.validate('11122233344455'); // false
 Form.cnpj.validate('12332112332121'); // true
 ```
+### generate
+|      Name    | Type    | Value            | Default |
+|:-------------|:--------|-----------------:|--------:|
+| customNumber | string  | 11 digits number | null    |
+
+### validate
+|      Name  | Type    | Value  | Default |
+|:-----------|:--------|-------:|--------:|
+| cnpj       | string  |a cnpj  | null    |
 
 ## Cpf
 ```javascript
@@ -45,6 +54,16 @@ Form.cpf.generate();
 Form.cpf.validate('11122233344'); // false
 Form.cpf.validate('12332112340'); // true
 ```
+
+### generate
+|      Name    | Type    | Value          | Default|
+|:-------------|:--------|---------------:|-------:|
+| customNumber | string  | 9 digits number| null   |
+
+### validate
+|      Name | Type    | Value | Default|
+|:----------|:--------|------:|-------:|
+| cpf       | string  |a cpf  | null   |
 
 # Names
 ## [Live Example](https://codesandbox.io/s/eloquent-kilby-ilwyh?fontsize=14&hidenavigation=1&theme=dark)
@@ -81,10 +100,19 @@ Form.names.fullName.generate(gender, captalize, abbreviation);
 
 ## PhoneNumber
 ```javascript
+//generate random valid number
 Form.contact.phoneNumber.generate(withPrefix, format);
-```
 
+//validate a number
+Form.contact.phoneNumber.validate(number);
+```
+### generate
 |      Name  | Type    | Value        | Default |
 |:-----------|:--------|-------------:|--------:|
 | withPrefix | boolean | true / false | false   |
 | format     | boolean | true / false | false   |
+
+### validate
+|      Name  | Type    | Value        | Default |
+|:-----------|:--------|-------------:|--------:|
+| number     | string  |a phone number| null    |
