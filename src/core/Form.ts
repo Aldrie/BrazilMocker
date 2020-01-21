@@ -9,6 +9,7 @@ import generateLastName from '../generators/lastName';
 import generateFullName from '../generators/fullName';
 
 import generatePhoneNumber from '../generators/phoneNumber';
+import validatePhoneNumber from '../validators/phoneNumber';
 
 const Form = {
 	cnpj: {
@@ -36,6 +37,7 @@ const Form = {
 	contact: {
 		phoneNumber: {
 			generate: generatePhoneNumber,
+			validate: validatePhoneNumber,
 		},
 	}
 };

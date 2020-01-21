@@ -11,10 +11,12 @@ describe('Form features', () => {
 			expect(validCnpj.length).toBe(14);
 		});
 
-		it('Should to validate a Cnpj', () => {
+		it('Should to validate a true Cnpj', () => {
 			expect(Form.cnpj.validate(validCnpj)).toBe(true);
+		});
 
-			expect(Form.cnpj.validate('11122233344455')).toBe(false);
+		it('Should to validate a false Cnpj', () => {
+			expect(Form.cnpj.validate('11111')).toBe(false);
 		});
 	});
 
@@ -60,6 +62,14 @@ describe('Form features', () => {
 	describe('Contact', () => {
 		it('Should to generate a phone number', () => {
 			expect(Form.contact.phoneNumber.generate(true, true)).toBeDefined();
+		});
+
+		it('Should to validate a phone number as true', () => {
+			expect(Form.contact.phoneNumber.validate('+55 11 96381-3469')).toBe(true);
+		});
+
+		it('Should to validate a phone number as false', () => {
+			expect(Form.contact.phoneNumber.validate('123123')).toBe(false);
 		});
 	});
 });

@@ -5,6 +5,8 @@ import validateCpf from '../validators/cpf';
 import generateFirstName from '../generators/firstName';
 import generateLastName from '../generators/lastName';
 import generateFullName from '../generators/fullName';
+import generatePhoneNumber from '../generators/phoneNumber';
+import validatePhoneNumber from '../validators/phoneNumber';
 declare const Form: {
     cnpj: {
         generate: typeof generateCnpj;
@@ -23,6 +25,12 @@ declare const Form: {
         };
         fullName: {
             generate: typeof generateFullName;
+        };
+    };
+    contact: {
+        phoneNumber: {
+            generate: typeof generatePhoneNumber;
+            validate: typeof validatePhoneNumber;
         };
     };
 };
