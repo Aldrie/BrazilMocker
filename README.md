@@ -1,6 +1,4 @@
-<div style="display: flex;justify-content: center;align-items:center;padding: 1.4rem;">
-	<img src="https://github.com/Aldrie/BrazilMocker/blob/master/assets/LOGO%200.png?raw=true" alt="Brazil Mocker Logo" style="width: 50%"/>
-</div>
+<img src="https://github.com/Aldrie/BrazilMocker/blob/master/assets/LOGO%200.png?raw=true" alt="Brazil Mocker Logo" width="180" align="center"/>
 
 ## Make your Brazilian developer life **easier :)**
 
