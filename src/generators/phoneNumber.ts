@@ -11,7 +11,7 @@ export default function generatePhoneNumber(withPrefix: boolean = false, format:
 		const randomDDD = BrazilDDDs[randomDDDIndex];
 
 		if (format) {
-			phoneNumber = `${withPrefix ? '+55' : ''} ${randomDDD} 9${randomPhoneNumber.slice(0, 4).join('')}-${randomPhoneNumber.slice(4, 8).join('')}`;
+			phoneNumber = `${withPrefix ? '+55' : ''} (${randomDDD}) 9${randomPhoneNumber.slice(0, 4).join('')}-${randomPhoneNumber.slice(4, 8).join('')}`;
 		} else {
 			phoneNumber = `${withPrefix ? '+55' : ''}${randomDDD}9${randomPhoneNumber.join('')}`;
 		}
