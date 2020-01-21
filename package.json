@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "types": "lib",
-  
+  "description": "A javascript lib to make brazilian dev life easier!",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon",
