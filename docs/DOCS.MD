@@ -38,6 +38,8 @@ const { Company } = require('brazil-mocker');
 
 [Company Name](#company-name)
 
+[Color](#color)
+
 # 
 
 ## Cnpj
@@ -173,3 +175,14 @@ Company.name.generate();
 //generate a custom category company name
 Company.name.generate('tech');
 ```
+
+## Color
+```javascript
+//generate a random color
+Company.color.generate(colorType);
+```
+
+### generate
+|      Name    | Type   | Value         | Default|
+|:-------------|:-------|--------------:|-------:|
+| colorType    | string | color notation| 'hex'  |
