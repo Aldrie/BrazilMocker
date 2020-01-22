@@ -37,7 +37,7 @@ describe('Form features', () => {
 		});
 	});
 
-	describe('Names', () => {
+	describe('Name', () => {
 		it('Should to generate a male first name', () => {
 			expect(Form.names.firstName.generate('male')).toBeDefined();
 		});
@@ -64,12 +64,14 @@ describe('Form features', () => {
 			expect(Form.contact.phoneNumber.generate(true, true)).toBeDefined();
 		});
 
-		it('Should to validate a phone number as true', () => {
-			expect(Form.contact.phoneNumber.validate('+55 11 96381-3469')).toBe(true);
-		});
-
-		it('Should to validate a phone number as false', () => {
-			expect(Form.contact.phoneNumber.validate('123123')).toBe(false);
+		describe('Number', () => {
+			it('Should to validate a phone number as true', () => {
+				expect(Form.contact.phoneNumber.validate('+55 11 96381-3469')).toBe(true);
+			});
+	
+			it('Should to validate a phone number as false', () => {
+				expect(Form.contact.phoneNumber.validate('123123')).toBe(false);
+			});
 		});
 
 		it('Should to generate a random uuid', () => {
@@ -80,12 +82,14 @@ describe('Form features', () => {
 			expect(Form.id.generate()).toBeDefined();
 		});
 
-		it('Should to generate a random email', () => {
-			expect(Form.contact.email.generate()).toBeDefined();
-		});
-
-		it('Should to generate a custom name and domain email', () => {
-			expect(Form.contact.email.generate('     aldrie japa', 'saas.com')).toBeDefined();
+		describe('Email', () => {
+			it('Should to generate a random email', () => {
+				expect(Form.contact.email.generate()).toBeDefined();
+			});
+	
+			it('Should to generate a custom name and domain email', () => {
+				expect(Form.contact.email.generate('     aldrie japa', 'saas.com')).toBeDefined();
+			});
 		});
 		
 	});
