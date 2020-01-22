@@ -26,6 +26,7 @@ export const female = [
 ];
 
 export const male = [
+	'aldriê',
 	'antônio',
 	'carlos',
 	'francisco',
