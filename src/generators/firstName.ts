@@ -5,7 +5,7 @@ import { names } from '../resources/names';
 export default function generateFirstName(gender?: 'male' | 'female' | any, captalize: boolean = true): string {
 	try {
 		let randomIndex = 0;
-	
+
 		if (gender === 'male') {
 			randomIndex = generateRandomNumber(0, names.firstName.male.length -1, true);
 			return captalize? captalizeFirstLetter(names.firstName.male[randomIndex])

@@ -1,0 +1,2 @@
+export default function generateImage(text?: string, width?: number, height?: number, fontSize?: number, fontFamily?: string, backgroundColor?: string, textColor?: string, textAlign?: 'start' | 'end' | 'left' | 'right' | 'center' | undefined): string;
+//# sourceMappingURL=image.d.ts.map

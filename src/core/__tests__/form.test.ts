@@ -68,7 +68,7 @@ describe('Form features', () => {
 			it('Should to validate a phone number as true', () => {
 				expect(Form.contact.phoneNumber.validate('+55 11 96381-3469')).toBe(true);
 			});
-	
+
 			it('Should to validate a phone number as false', () => {
 				expect(Form.contact.phoneNumber.validate('123123')).toBe(false);
 			});
@@ -86,11 +86,15 @@ describe('Form features', () => {
 			it('Should to generate a random email', () => {
 				expect(Form.contact.email.generate()).toBeDefined();
 			});
-	
+
 			it('Should to generate a custom name and domain email', () => {
 				expect(Form.contact.email.generate('     aldrie japa', 'saas.com')).toBeDefined();
 			});
 		});
-		
+
+		it('Should to generate a random image', () => {
+			expect(Form.image.generate()).toBeDefined();
+		});
+
 	});
 });

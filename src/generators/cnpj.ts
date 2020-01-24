@@ -7,7 +7,7 @@ export default function generateCnpj(customBaseNumber?: string): string {
 	try {
 		const randomArray = customBaseNumber? customBaseNumber.substring(0, 12).split('')
 			: generateRandomArray(decimalNumbers, 12);
-		
+
 		const scalarProductArray = scalarProduct(cnpjPatternArrayOne, randomArray as number[]);
 		const scalarResult = scalarProductArray.reduce((all, current) => all + current)%11;
 		const firstDigit = scalarResult < 2 ? 0 : 11 - scalarResult;

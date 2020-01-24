@@ -15,6 +15,7 @@ import generateUuid from '../generators/uuid';
 import generateRandomId from '../generators/randomId';
 import generateEmail from '../generators/email';
 import validateEmail from '../validators/email';
+import generateImage from '../generators/image';
 
 const Form = {
 	uuid: {
@@ -33,7 +34,7 @@ const Form = {
 		generate: generateCpf,
 		validate: validateCpf,
 	},
-	
+
 	names: {
 		firstName: {
 			generate: generateFirstName,
@@ -55,6 +56,10 @@ const Form = {
 			generate: generateEmail,
 			validate: validateEmail,
 		},
+	},
+
+	image: {
+		generate: generateImage,
 	}
 };
 

@@ -17,7 +17,7 @@ export default function generateRandomId(): string {
 		while(processedMilliseconds.length < 8) {
 			const randomNumber = generateRandomNumber(3, 17);
 			const randomIndex = generateRandomNumber(0, milliseconds.length -1);
-		
+
 			const number = Math.floor((parseInt(milliseconds[randomIndex]) * 99)% randomNumber);
 			processedMilliseconds.push(number);
 		}
@@ -27,7 +27,7 @@ export default function generateRandomId(): string {
 			const number = processedMilliseconds[i];
 
 			result.push(number);
-		
+
 			if(generateRandomNumber(0, 1) === 0) {
 				result.push(character.toString().toLowerCase());
 			}else {
@@ -35,7 +35,7 @@ export default function generateRandomId(): string {
 			}
 		}
 
-	
+
 		return result.join('');
 	} catch(err) {
 		throw new Error('Error in generate randomid' + '\n' + err);

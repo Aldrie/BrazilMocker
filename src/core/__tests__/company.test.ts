@@ -14,5 +14,9 @@ describe('Company features', () => {
 			expect(Company.color.generate('rgb')).toBeDefined();
 		});
 	});
-	
+
+	it('Should to generate a rgb color', () => {
+		expect(Company.logo.generate('rgb')).toBeDefined();
+	});
+
 });

@@ -1,55 +1,59 @@
 {
-  "name": "brazil-mocker",
-  "version": "1.1.6",
-  "main": "lib/index.js",
-  "license": "MIT",
-  "types": "lib",
-  "description": "A javascript lib to make brazilian dev life easier!",
-  "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon",
-    "test": "jest",
-    "test:watch": "jest --watch",
-	 "test:watchAll": "jest --watchAll",
-	 "build": "tsc -p .",
-	"lint": "eslint .",
-	"lint:fix": "eslint . --fix",
-	"prepublish": "tsc",
-	"precommit-msg": "echo 'Pre-commit checks 🤔' && exit 0"
-  },
-  "pre-commit": [
-	  "precommit-msg",
-	  "lint",
-	  "test"
-  ],
-  "devDependencies": {
-    "@types/jest": "^24.9.0",
-    "@types/node": "^13.1.7",
-    "@typescript-eslint/eslint-plugin": "^2.16.0",
-    "@typescript-eslint/parser": "^2.16.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.3.0",
-    "ts-node": "^8.6.2",
-    "tsc": "^1.20150623.0",
-    "typescript": "^3.7.4"
-  },
-  "repository": {
-	"type": "git",
-	"url": "https://github.com/Aldrie/BrazilMocker"
+ "name": "brazil-mocker",
+ "version": "1.1.7",
+ "main": "lib/index.js",
+ "license": "MIT",
+ "types": "lib",
+ "description": "A javascript lib to make brazilian dev life easier!",
+ "scripts": {
+  "start": "ts-node src/index.ts",
+  "dev": "nodemon",
+  "test": "jest",
+  "test:watch": "jest --watch",
+  "test:watchAll": "jest --watchAll",
+  "build": "tsc -p .",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix",
+  "prepublish": "tsc",
+  "precommit-msg": "echo 'Pre-commit checks 🤔' && exit 0"
+ },
+ "pre-commit": [
+  "precommit-msg",
+  "lint",
+  "test"
+ ],
+ "devDependencies": {
+  "@types/jest": "^24.9.0",
+  "@types/node": "^13.5.0",
+  "@typescript-eslint/eslint-plugin": "^2.17.0",
+  "@typescript-eslint/parser": "^2.17.0",
+  "eslint": "^6.8.0",
+  "eslint-config-airbnb-base": "^14.0.0",
+  "eslint-plugin-import": "^2.20.0",
+  "jest": "^24.9.0",
+  "pre-commit": "^1.2.2",
+  "ts-jest": "^24.3.0",
+  "ts-node": "^8.6.2",
+  "tsc": "^1.20150623.0",
+  "typescript": "^3.7.4"
+ },
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/Aldrie/BrazilMocker"
  },
  "keywords": [
-	"brazil",
-	"brasil",
-	"mocker",
-	"faker",
-	"fake",
-	"test",
-	"generator",
-	"cpf",
-	"cnpj",
-	"name"
- ]
+  "brazil",
+  "brasil",
+  "mocker",
+  "faker",
+  "fake",
+  "test",
+  "generator",
+  "cpf",
+  "cnpj",
+  "name"
+ ],
+ "dependencies": {
+  "canvas": "^2.6.1"
+ }
 }

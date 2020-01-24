@@ -10,4 +10,4 @@ export default function generateUuid(): string {
 }
 
 //https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript/105074#105074?newreg=9c20b6db1b72469a9b22ba038972130e
-//thanks 
+//thanks

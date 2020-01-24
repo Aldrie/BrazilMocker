@@ -11,6 +11,7 @@ import generateUuid from '../generators/uuid';
 import generateRandomId from '../generators/randomId';
 import generateEmail from '../generators/email';
 import validateEmail from '../validators/email';
+import generateImage from '../generators/image';
 declare const Form: {
     uuid: {
         generate: typeof generateUuid;
@@ -46,6 +47,9 @@ declare const Form: {
             generate: typeof generateEmail;
             validate: typeof validateEmail;
         };
+    };
+    image: {
+        generate: typeof generateImage;
     };
 };
 export default Form;

@@ -1,5 +1,6 @@
 import generateCompanyName from '../generators/companyName';
 import generateColor from '../generators/color';
+import generateLogo from '../generators/logo';
 
 const Company = {
 	name: {
@@ -7,7 +8,10 @@ const Company = {
 	},
 	color: {
 		generate: generateColor,
-	}
+	},
+	logo: {
+		generate: generateLogo,
+	},
 };
 
 export default Company;

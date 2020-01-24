@@ -4,12 +4,12 @@ import { generateRandomNumber, generateRandomArray } from '../generators/randomG
 import generateFullName from '../generators/fullName';
 
 export default function generateEmail(customName?: string, customDomain?: string): string {
-	
+
 	let name = '';
 	let domain = customDomain;
 
 	if (!customDomain) {
-		if (generateRandomNumber(0, 3) === 0) {	
+		if (generateRandomNumber(0, 3) === 0) {
 			domain = generateRandomArray(alphabet, generateRandomNumber(3, 10)).join('')+'.com';
 		} else {
 			domain = emailDomains[generateRandomNumber(0, emailDomains.length -1)];
