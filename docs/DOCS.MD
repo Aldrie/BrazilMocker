@@ -26,6 +26,8 @@ const { Form } = require('brazil-mocker');
 
 [Id](#uuid)
 
+[Image](#image)
+
 # Company
 
 ```javascript
@@ -39,6 +41,8 @@ const { Company } = require('brazil-mocker');
 [Company Name](#company-name)
 
 [Color](#color)
+
+[Logo](#logo)
 
 # 
 
@@ -165,6 +169,34 @@ Form.id.generate();
 //* my own random id system
 ```
 
+## Image
+```javascript
+//generate a random image
+Form.image.generate(); //returns a base64 image
+
+//generate a custom image
+Form.image.generate(
+	text,
+	width,
+	height,
+	fontSize,
+	fontFamily,
+	backgroundColor,
+	textColor,
+	textAlign,
+);
+```
+| Name            | Type   |                                     Value |          Default |
+|-----------------|--------|------------------------------------------:|-----------------:|
+| text            | string |                                    a text |           random |
+| width           | number |                                  x pixels |              300 |
+| height          | number |                                  y pixels |              300 |
+| fontSize        | number |                       font size in pixels |               60 |
+| fontFamily      | string |                        a font family name |            Arial |
+| backgroundColor | string |                                   a color |           random |
+| textColor       | string |                                   a color | a contrast color |
+| textAlign       | string | 'start', 'end', 'left', 'right', 'center' |         'center' |
+
 # 
 
 ## Company Name
@@ -186,3 +218,31 @@ Company.color.generate(colorType);
 |      Name    | Type   | Value         | Default|
 |:-------------|:-------|--------------:|-------:|
 | colorType    | string | color notation| 'hex'  |
+
+## Logo
+```javascript
+//generate a random logo
+Company.logo.generate(); //returns a base64 image
+
+//generate a custom logo
+Company.logo.generate(
+	text,
+	width,
+	height,
+	fontSize,
+	fontFamily,
+	backgroundGradient,
+	textColor,
+	textAlign,
+);
+```
+| Name               | Type         |                                     Value |          Default |
+|--------------------|--------------|------------------------------------------:|-----------------:|
+| text               | string       |                                    a text |           random |
+| width              | number       |                                  x pixels |              300 |
+| height             | number       |                                  y pixels |              300 |
+| fontSize           | number       |                       font size in pixels |               60 |
+| fontFamily         | string       |                        a font family name |            Arial |
+| backgroundGradient | string array |                            [color, color] |           random |
+| textColor          | string       |                                   a color | a contrast color |
+| textAlign          | string       | 'start', 'end', 'left', 'right', 'center' |         'center' |
