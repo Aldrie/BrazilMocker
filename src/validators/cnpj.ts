@@ -3,6 +3,8 @@ import cnpjGenerator from '../generators/cnpj';
 export default function cnpjValidator(cnpj: string): boolean {
 	try {
 
+		cnpj = cnpj.replace(/\D/g, '');
+
 		if (cnpj.length !== 14) {
 			return false;
 		}
@@ -12,7 +14,7 @@ export default function cnpjValidator(cnpj: string): boolean {
 				return false;
 			}
 		}
-		
+
 		const digits = cnpj.substring(12, 14);
 		const generated = cnpjGenerator(cnpj);
 		const generatedDigits = generated.substring(12, 14);

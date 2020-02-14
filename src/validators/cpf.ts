@@ -3,6 +3,8 @@ import generateCpf from '../generators/cpf';
 export default function validateCpf(cpf: string): boolean {
 	try {
 
+		cpf = cpf.replace(/\D/g, '');
+
 		if(cpf.length !== 11) {
 			return false;
 		}
